@@ -2,11 +2,13 @@
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    color: rgb(255, 166, 0);
   }
   
   h1 {
     font-size: 64px;
     font-weight: bolder;
+    color: sienna;
   }
   
   h2 {
