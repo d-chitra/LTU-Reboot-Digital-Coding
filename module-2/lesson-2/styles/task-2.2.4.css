@@ -1,3 +1,23 @@
 /* Your code goes below here */
+/*
+  Examples of position selectors
+*/
 
-/* Your code goes above here */
+p em {
+    font-size: 28px;
+  }
+  
+  p strong {
+    font-size: 32px;
+  }
+  ul em{
+      background-color: skyblue;
+      color: slateblue;
+  }
+
+  ul strong{
+        color: tomato;
+  }
+
+
+  /* Your code goes above here */
