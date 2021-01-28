@@ -1,3 +1,26 @@
 /* Your code goes below here */
-
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 64px;
+    font-weight: bolder;
+  }
+  
+  h2 {
+    font-size: 44px;
+    font-style: oblique;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:royalblue;
+  }
 /* Your code goes above here */
