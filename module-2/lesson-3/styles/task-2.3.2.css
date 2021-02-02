@@ -1,0 +1,14 @@
+  
+span {
+    color: green;
+  }
+
+ #example-span{
+     background-color: blueviolet;
+     color: greenyellow;
+ } 
+
+ .span-class{
+     background: chartreuse;
+     color: darkred;
+ }
