@@ -1,0 +1,21 @@
+a:link {
+    color: rgba(0, 128, 0, 0.795);
+  }
+  
+  a:visited {
+    color: #b548ae;
+  }
+  
+  a:hover {
+    color: orange;
+    font-size: 32px;
+  }
+  
+  a:focus {
+    color: #24c796;
+    font-size: 32px;
+  }
+  
+  a:active {
+    color: #2732cc;
+  }
