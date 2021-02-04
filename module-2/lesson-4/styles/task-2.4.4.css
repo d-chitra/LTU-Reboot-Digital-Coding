@@ -7,13 +7,13 @@ img{
     max-width: 120%;
 }
 .wrapper figcaption{
-    background-color: rgb(205, 226, 210);
-    border: 10px;
-    font-size: large;
+    background-color: pink;
+    border: 50px;
+    font-size: x-large;
     color: blue;
     display: inline-block;
     padding: 15px 30px;
     position:absolute;
-    top: 40px;
-    left: 40px;
+    top: 30px;
+    left: 20px;
 }
