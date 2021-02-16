@@ -15,5 +15,5 @@ function wearAcoat(temperature){
 
 wearAcoat(5);
 wearAcoat(12);
-wearAcoat(7);
+wearAcoat(30);
 wearAcoat(-7);
