@@ -10,7 +10,6 @@ function percentageCalculator(number,percentage){
         onePercent = number / 100;
         percentValue = onePercent * percentage;
         return percentValue;
-
     }
     else {
         console.log('both arguments needs to be a number')
@@ -20,7 +19,10 @@ function percentageCalculator(number,percentage){
 var sum = percentageCalculator(100,90);
 
 
-console.log(sum)
+console.log(sum);
+
+sum = percentageCalculator(50,20);
+console.log(sum);
 
 
 
