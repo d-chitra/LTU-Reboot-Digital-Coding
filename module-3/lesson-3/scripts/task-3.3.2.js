@@ -1,5 +1,6 @@
 function drinkOrder(size,drink){
         var blnValidation = true;
+        var strMessage = '';
         switch(size) {
         case 'small':
         case 'medium':
