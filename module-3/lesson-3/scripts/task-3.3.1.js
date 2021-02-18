@@ -12,13 +12,11 @@ function percentageCalculator(number,percentage){
         return percentValue;
     }
     else {
-        console.log('both arguments needs to be a number')
+        console.log('both arguments needs to be a number');
     }
 }
 
 var sum = percentageCalculator(100,90);
-
-
 console.log(sum);
 
 sum = percentageCalculator(50,20);
