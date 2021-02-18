@@ -33,5 +33,5 @@ function calculator(number1, number2, operator){
 }
     return sum;
 }
-sum = calculator(10, 10, '+');
+sum = calculator(100,20, '*');
 console.log(sum);
