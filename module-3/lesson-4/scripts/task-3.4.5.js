@@ -21,4 +21,3 @@ objRecipe ={
 
 objRecipe.letsCook();
 
-// 
