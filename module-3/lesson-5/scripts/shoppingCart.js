@@ -61,33 +61,49 @@ let arrShoppingCart = [
   }];
 //console.log(arrShoppingCart);
 
+// Returns x the total price of the cart with discounts applied.
+// {array} arrShoppingCart is the shopping cart array.
+// {number} x the total price of the cart with discounts applied.
+
 function getTotalPrice(arrShoppingCart=[],objCoupon={}){
+  /// setting total of cart to 0 before the loop starts
   let total = 0;
+  /// setting the item price to 0 so its isnt redeclare in the loop
   let itemPrice = 0;
+  /// loops through each item in the shopping cart array
   for(var counter=0; counter < arrShoppingCart.length; counter++){
     // console.log(counter);
+    /// select the current cart item using the counter as the array key
     var objItem = arrShoppingCart[counter];
     // console.log(objItem);
+    // multiply the cost of the item by the quantity of the item
     itemPrice = parseFloat(objItem.quantity) * parseFloat(objItem.price);
     // console.log(itemPrice);
+    /// if a coupon has been passed as an argument AND the coupon type is percentage
     if(objCoupon && objCoupon.type == 'percentage'){
+      ///if the coupon category = the current item type OR coupon category =all
       if(objCoupon.category == objItem.type || objCoupon.category == 'all'){
+        //itemPrice = percentage decrease for item
         itemPrice = (itemPrice/100) * (100 - objCoupon.value);
         // console.log(itemPrice);
       } 
     }
+    /// total = old total +current item price
     total = total + itemPrice;
     // console.log(total);
   }
+  ///if a coupon has benn passed as an argument AND the coupon type is total
   if(objCoupon && objCoupon.type == 'total'){
+    ///decrease the total by the value of the coupon
     total = total - objCoupon.value;
   }
+  /// return the total price of the cart (with discount applied where applicable)
   return total.toFixed(2);
 }
 let objCoupon = {
   name:'20OFF',
   value:20,
-  category:'food',
+  category:'home',
   type:'percentage'
 };
 let cartTotal = getTotalPrice(arrShoppingCart,objCoupon);
