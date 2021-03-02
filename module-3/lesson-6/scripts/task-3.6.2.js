@@ -3,3 +3,5 @@ console.log(newElement);
 var divElement = document.querySelector('div');
 //console.log(divElement);
 newElement.innerHTML = 'Chitra is cool';
+console.log(newElement);
+divElement.append(newElement);
